@@ -1,0 +1,228 @@
+[meta title:"SentiSage" description:"Short description of your project" /]
+
+[Header
+  title:"SentiSage"
+  subtitle:"Sentiment Analysis"
+  author:"Team Datallica" /]
+
+[var name:"senti_spec" value:`{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "padding": {
+        "top": 30,
+        "left": 25,
+        "right": 25
+    },
+    "config": {
+        "axis": {
+            "gridOpacity": 0.6
+        },
+        "view": {
+          "strokeOpacity": 0
+        },
+        "text": {
+          "font": "Open Sans"
+        }
+    },
+    "vconcat": [
+        {
+            "width": 650,
+            "height": 200,
+            "layer": [
+                {
+                    "encoding": {
+                        "x": {
+                            "field": "date",
+                            "type": "temporal",
+                            "axis": {
+                                "labels": false,
+                                "title": null,
+                                "grid": false,
+                                "ticks": false,
+                                "domain": false
+                            }
+                        },
+                        "y": {
+                            "field": "pmo",
+                            "type": "quantitative",
+                            "axis": {
+                                "title": "Sentiment",
+                                "labels": false,
+                                "tickCount": 4,
+                                "ticks": false,
+                                "domain": false
+                            }
+                        }
+                    },
+                    "layer": [
+                        {
+                            "mark": "line"
+                        },
+                        {
+                            "selection": {
+                                "tooltip": {
+                                    "type": "single",
+                                    "nearest": true,
+                                    "on": "mouseover",
+                                    "encodings": [
+                                        "x"
+                                    ],
+                                    "empty": "none"
+                                }
+                            },
+                            "mark": "point",
+                            "encoding": {
+                                "opacity": {
+                                    "condition": {
+                                        "selection": "tooltip",
+                                        "value": 1
+                                    },
+                                    "value": 0
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "transform": [
+                        {
+                            "filter": {
+                                "selection": "tooltip"
+                            }
+                        }
+                    ],
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "right",
+                                "dx": 5,
+                                "dy": -12
+                            },
+                            "encoding": {
+                                "text": {
+                                    "type": "temporal",
+                                    "field": "date"
+                                },
+                                "x": {
+                                    "type": "temporal",
+                                    "field": "date"
+                                },
+                                "y": {
+                                    "type": "quantitative",
+                                    "field": "pmo"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "width": 650,
+            "height": 100,
+            "layer": [
+                {
+                    "encoding": {
+                        "x": {
+                            "field": "date",
+                            "type": "temporal",
+                            "axis": {
+                                "title": "Date",
+                                "grid": false
+
+                            }
+                        },
+                        "y": {
+                            "field": "cnt",
+                            "type": "quantitative",
+                            "axis": {
+                                "title": "Volume",
+                                "domain": false,
+                                "ticks": false
+                            }
+                        }
+                    },
+                    "layer": [
+                        {
+                            "mark": "bar"
+                        },
+                        {
+                            "selection": {
+                                "tooltip": {
+                                    "type": "single",
+                                    "nearest": true,
+                                    "on": "mouseover",
+                                    "encodings": [
+                                        "x"
+                                    ],
+                                    "empty": "none"
+                                }
+                            },
+                            "mark": "point",
+                            "encoding": {
+                                "opacity": {
+                                    "condition": {
+                                        "selection": "tooltip",
+                                        "value": 1
+                                    },
+                                    "value": 0
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "transform": [
+                        {
+                            "filter": {
+                                "selection": "tooltip"
+                            }
+                        }
+                    ],
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 0,
+                                "dy": -16
+                            },
+                            "encoding": {
+                                "text": {
+                                    "type": "quantitative",
+                                    "field": "cnt"
+                                },
+                                "x": {
+                                    "type": "temporal",
+                                    "field": "date"
+                                },
+                                "y": {
+                                    "type": "quantitative",
+                                    "field": "cnt"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}` /]
+
+
+[data name:"sentiment_data_apple" source:"apple.csv" /]
+
+# Apple
+
+[Aside]
+  The dip in apples sentiment...
+[/Aside]
+
+[IdyllVegaLite data:sentiment_data_apple spec:senti_spec /]
+
+# Google
+
+[data name:"sentiment_data_google" source:"google.csv" /]
+
+
+[IdyllVegaLite data:sentiment_data_google spec:senti_spec /]
