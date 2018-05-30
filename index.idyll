@@ -14,13 +14,21 @@
     },
     "config": {
         "axis": {
-            "gridOpacity": 0.6
+            "gridOpacity": 0.6,
+            "labelFont": "Open Sans",
+            "labelFontSize": 12,
+            "titleFont": "Open Sans",
+            "titleFontSize": 16,
+            "titleFontWeight": "normal"
         },
         "view": {
-          "strokeOpacity": 0
+            "strokeOpacity": 0
         },
         "text": {
-          "font": "Open Sans"
+            "font": "Open Sans"
+        },
+        "axisX": {
+            "labelAngle": 15
         }
     },
     "vconcat": [
@@ -96,7 +104,9 @@
                                 "type": "text",
                                 "align": "right",
                                 "dx": 5,
-                                "dy": -12
+                                "dy": -12,
+                                "fontSize": 14,
+                                "fontWeight": "bold"
                             },
                             "encoding": {
                                 "text": {
@@ -129,7 +139,6 @@
                             "axis": {
                                 "title": "Date",
                                 "grid": false
-
                             }
                         },
                         "y": {
@@ -185,7 +194,9 @@
                                 "type": "text",
                                 "align": "left",
                                 "dx": 0,
-                                "dy": -16
+                                "dy": -16,
+                                "fontSize": 14,
+                                "fontWeight": "bold"
                             },
                             "encoding": {
                                 "text": {
@@ -209,7 +220,6 @@
     ]
 }` /]
 
-
 [data name:"sentiment_data_apple" source:"apple.csv" /]
 
 # Apple
@@ -226,3 +236,27 @@
 
 
 [IdyllVegaLite data:sentiment_data_google spec:senti_spec /]
+
+# Uber
+
+[data name:"sentiment_data_uber" source:"google.csv" /]
+
+
+[IdyllVegaLite data:sentiment_data_uber spec:senti_spec /]
+
+# Amazon
+
+[Aside]
+**Nov 16, 2017** - Amazon Key Flaw Could Let Rogue Deliverymen Disable Your Camera.
+
+**Nov 17, 2017** - Amazon has been accused of 'ruining Christmas ' by sending out presents in their original packaging.
+
+**Jan 19, 2018** - Amazon under fire for selling 'Slavery makes sh*t happen' t-shirts for kids
+
+[/Aside]
+
+
+[data name:"sentiment_data_amazon" source:"amazon.csv" /]
+
+
+[IdyllVegaLite data:sentiment_data_amazon spec:senti_spec /]
