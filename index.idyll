@@ -232,6 +232,10 @@ Dec 23, 2017 - [Apple’s forced slowdown is the gift we didn’t know we wanted
 
 # Google
 
+[Aside]
+Jan 8, 2018 - [Google engineer fired for sexist memo sues ex-employer](http://www.dailymail.co.uk/wires/afp/article-5248287/Google-engineer-fired-sexist-memo-sues-ex-employer.html)
+[/Aside]
+
 [data name:"sentiment_data_google" source:"google.csv" /]
 
 
@@ -248,11 +252,10 @@ Dec 23, 2017 - [Apple’s forced slowdown is the gift we didn’t know we wanted
 # Facebook
 
 [Aside]
-**Nov 1, 2017** - Since the 2016 U.S. presidential election, Facebook has faced immense criticism for allowing misinformation, propaganda and violent videos to spread on its service as its growing power shapes political discourse around the world.
+**Jan 5, 2018** - [Facebook (FB) Hits New 12-Month High at $184.84](https://www.dailypolitical.com/2018/01/04/facebook-fb-hits-new-12-month-high-at-184-84.html)
 
-**Jan 17, 2018** - Violent extremist and hate groups continue to get their materials posted onto social media sites like Facebook, despite strong efforts to block it, a US Senate panel was told.
+**Jan 17, 2018** - [Facebook, Google and Twitter say they are using 'counterpropaganda' to fight extremist content as Senate Committee warns social networks are 'not doing enough'](http://www.dailymail.co.uk/sciencetech/article-5280527/Facebook-Twitter-YouTube-pressed-terror-content.html)
 [/Aside]
-
 [data name:"sentiment_data_facebook" source:"facebook.csv" /]
 
 
