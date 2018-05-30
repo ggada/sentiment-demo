@@ -225,7 +225,7 @@
 # Apple
 
 [Aside]
-  The dip in apples sentiment...
+Dec 23, 2017 - [Apple’s forced slowdown is the gift we didn’t know we wanted](https://www.seattletimes.com/life/lifestyle/apples-forced-slowdown-is-the-gift-we-didnt-know-we-wanted/)
 [/Aside]
 
 [IdyllVegaLite data:sentiment_data_apple spec:senti_spec /]
@@ -244,6 +244,21 @@
 
 [IdyllVegaLite data:sentiment_data_uber spec:senti_spec /]
 
+
+# Facebook
+
+[Aside]
+**Nov 1, 2017** - Since the 2016 U.S. presidential election, Facebook has faced immense criticism for allowing misinformation, propaganda and violent videos to spread on its service as its growing power shapes political discourse around the world.
+
+**Jan 17, 2018** - Violent extremist and hate groups continue to get their materials posted onto social media sites like Facebook, despite strong efforts to block it, a US Senate panel was told.
+[/Aside]
+
+[data name:"sentiment_data_facebook" source:"facebook.csv" /]
+
+
+[IdyllVegaLite data:sentiment_data_facebook spec:senti_spec /]
+
+
 # Amazon
 
 [Aside]
@@ -252,11 +267,9 @@
 **Nov 17, 2017** - Amazon has been accused of 'ruining Christmas ' by sending out presents in their original packaging.
 
 **Jan 19, 2018** - Amazon under fire for selling 'Slavery makes sh*t happen' t-shirts for kids
-
 [/Aside]
 
 
 [data name:"sentiment_data_amazon" source:"amazon.csv" /]
-
 
 [IdyllVegaLite data:sentiment_data_amazon spec:senti_spec /]
