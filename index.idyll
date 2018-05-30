@@ -226,6 +226,8 @@
 
 [Aside]
 Dec 23, 2017 - [Apple’s forced slowdown is the gift we didn’t know we wanted](https://www.seattletimes.com/life/lifestyle/apples-forced-slowdown-is-the-gift-we-didnt-know-we-wanted/)
+
+Jan 22, 2018 - [Apple joins Malala Fund to empower girls' education](http://www.ianslive.in/index.php?param=news/-576765)
 [/Aside]
 
 [IdyllVegaLite data:sentiment_data_apple spec:senti_spec /]
@@ -234,6 +236,8 @@ Dec 23, 2017 - [Apple’s forced slowdown is the gift we didn’t know we wanted
 
 [Aside]
 Jan 8, 2018 - [Google engineer fired for sexist memo sues ex-employer](http://www.dailymail.co.uk/wires/afp/article-5248287/Google-engineer-fired-sexist-memo-sues-ex-employer.html)
+
+Jan 22, 2018 - [Google Pixel 3 Concept Video Shows Potential Design And Features](https://www.valuewalk.com/2018/01/new-google-pixel-3-concept-video/)
 [/Aside]
 
 [data name:"sentiment_data_google" source:"google.csv" /]
@@ -242,6 +246,12 @@ Jan 8, 2018 - [Google engineer fired for sexist memo sues ex-employer](http://ww
 [IdyllVegaLite data:sentiment_data_google spec:senti_spec /]
 
 # Uber
+
+[Aside]
+Jan 3, 2018 - [Uber is sued over payment for mobile ads it called fraudulent](http://www.dailymail.co.uk/wires/reuters/article-5233159/Uber-sued-payment-mobile-ads-called-fraudulent.html)
+
+Jan 22, 2018 - [Uber CEO focused on "responsible growth", seeks fresh start in Germany](http://www.dailymail.co.uk/wires/reuters/article-5298659/Uber-CEO-focused-responsible-growth--seeks-fresh-start-Germany.html)
+[/Aside]
 
 [data name:"sentiment_data_uber" source:"google.csv" /]
 
@@ -265,11 +275,11 @@ Jan 8, 2018 - [Google engineer fired for sexist memo sues ex-employer](http://ww
 # Amazon
 
 [Aside]
-**Nov 16, 2017** - Amazon Key Flaw Could Let Rogue Deliverymen Disable Your Camera.
+**Nov 16, 2017** - [Amazon Key Flaw Could Let Rogue Deliverymen Disable Your Camera.](https://www.wired.com/story/amazon-key-flaw-let-deliverymen-disable-your-camera/)
 
-**Nov 17, 2017** - Amazon has been accused of 'ruining Christmas ' by sending out presents in their original packaging.
+**Nov 17, 2017** - [Amazon has been accused of 'ruining Christmas ' by sending out presents in their original packaging.](http://www.dailymail.co.uk/femail/article-5092555/Amazon-accused-ruining-Christmas-present-surprises.html)
 
-**Jan 19, 2018** - Amazon under fire for selling 'Slavery makes sh*t happen' t-shirts for kids
+**Jan 19, 2018** - [Amazon under fire for selling 'Slavery makes sh*t happen' t-shirts for kids.](http://www.dailymail.co.uk/news/article-5289529/Amazon-fire-Slavery-makes-sh-t-happen-t-shirts.html)
 [/Aside]
 
 
